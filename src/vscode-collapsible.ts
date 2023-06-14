@@ -161,11 +161,6 @@ export class VscodeCollapsible extends VscElement {
           font-famiy: var(--vscode-editor-font-family),
             var(--vscode-font-family);
         }
-
-        @media only screen and (max-width: 400px) {
-          .collapsible-header {
-          }
-        }
       `,
     ];
   }
