@@ -75,10 +75,13 @@ export class VscodeCollapsible extends VscElement {
         }
 
         .collapsible-header {
-          align-items: center;
+          overflow: ellipsis;  /* TODO: change to ellipsis */
+          text-wrap: nowrap;
+          white-space: nowrap;
           background-color: var(--header-background);
           cursor: pointer;
           display: flex;
+          align-items: center;
           height: 22px;
           line-height: 22px;
           user-select: none;
@@ -86,26 +89,25 @@ export class VscodeCollapsible extends VscElement {
 
         .collapsible-header:focus {
           opacity: 1;
-          outline-offset: -1px;
-          outline-style: solid;
-          outline-width: 1px;
-          outline-color: var(--focus-border);
           border-left: 4px solid var(--focus-border);
+          /* background-color: var(--vscode); */
+          outline: none;
         }
 
         .collapsible-header h3 {
           color: var(--title-foreground);
           font-family: var(--font-family);
-          font-size: 11px;
-          font-weight: 700;
+          font-size: 13px;
+          font-weight: 500;
           margin: 0;
-          text-transform: uppercase;
+          align-items: stretch;
         }
 
         .header-icon {
           color: var(--icon-foreground);
           display: block;
           margin: 0 3px;
+          flex-shrink: 0;
         }
 
         .collapsible.open .header-icon {
@@ -160,6 +162,7 @@ export class VscodeCollapsible extends VscElement {
           color: var(--vscode-breadcrumb-foreground);
           font-famiy: var(--vscode-editor-font-family),
             var(--vscode-font-family);
+          flex-shink: 0;
         }
       `,
     ];
