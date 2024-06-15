@@ -210,7 +210,7 @@
     "dotenv": "^16.0.3",
     "eslint": "^8.26.0",
     "faker": "^6.6.6",
-    "lit-analyzer": "^1.2.1",
+    "lit-analyzer": "^2.0.3",
     "markdown-it": "^13.0.1",
     "markdown-it-anchor": "^8.6.5",
     "mocha": "^10.1.0",
